@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "constant.h"
 
-#define MAX_LIFE 5
+#define MAX_LIFE 5 
 
 class Game
 {
