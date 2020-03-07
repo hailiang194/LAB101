@@ -9,6 +9,7 @@
 
 int main()
 {
+	CLEAN_SCREEN;
 	//set randomize generator
 	srand(time(NULL));
 

@@ -49,6 +49,7 @@ bool Scence::inputString(char *s, char *msg, const int LENGTH)
 
 void Scence::menu(ReadLines &words)
 {
+    CLEAN_SCREEN;
     char prompt[] = "Would you like to play hangman (yes, no)?\n";
     char option[4] = ""; //because yes need 4 char
 
@@ -62,6 +63,7 @@ void Scence::menu(ReadLines &words)
 
     if(strcmp(option, "yes") == 0)
     {
+        CLEAN_SCREEN;
         mainGame(words);
     }
     else if(strcmp(option, "no"))
@@ -103,6 +105,7 @@ void Scence::mainGame(ReadLines &words)
         char guessPrompt[] = "Please enter your guess.\n";
         inputChar(guess, guessPrompt);
 
+        CLEAN_SCREEN;
         if(GameProcess::isWrongGuess(game, guess))
         {
             printf("Sorry, that letter is NOT in the puzzle.\n");
@@ -120,14 +123,14 @@ void Scence::mainGame(ReadLines &words)
         game.select(guess);
 
         status = GameProcess::getGameState(game);
-
     }
 
-
+    gameOver(game, status);
 }
 
 void Scence::gameOver(Game &game, StatusFlag status)
 {
+    CLEAN_SCREEN;
     switch(status)
     {
         case WIN:
@@ -135,7 +138,7 @@ void Scence::gameOver(Game &game, StatusFlag status)
             break;
         case LOSE:
             printf("Sorry, you have made %d incorrect guesses, you lose.\n", MAX_LIFE - game.getLife());
-            printf("The correct word was");
+            printf("The correct word was ");
             break;
     }
 
@@ -146,4 +149,7 @@ void Scence::gameOver(Game &game, StatusFlag status)
         printf("%c", toupper(word[i]));
     }
     printf("\n");
+
+    __fpurge(stdin);
+    getchar();
 }

@@ -10,6 +10,8 @@
 #include "game-process.h"
 #include "constant.h"
 
+#define CLEAN_SCREEN printf("\e[1;1H\e[2J")
+
 #define HIDDEN_CHAR '_'
 
 class Scence
