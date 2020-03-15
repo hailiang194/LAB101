@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <limits.h>
+#include <termios.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -11,19 +12,33 @@
 #define MAX_LENGTH 256
 #define NUM_ALPHABET 26
 
-bool inputChar(char *s, char *msg);
+#define ENTER 13
+#define ESC 27
+
+#define SHOW_FREQUENCES(freq,isShowed) \
+{ \
+    for(int i = 0; i < NUM_ALPHABET; i++) \
+        if((isShowed) && freq[i] != 0) \
+        { \
+            printf("%3c ", i + 'a'); \
+        } \
+    printf("\n"); \
+    for(int i = 0; i < NUM_ALPHABET; i++) \
+        if((isShowed) && freq[i] != 0) \
+        { \
+            printf("%3d ", freq[i]); \
+        } \
+    printf("\n"); \
+} 
+
+int getch();
+
 bool inputString(char *s, char *msg, const int LENGTH);
 
 int * getFrequencesOfCharacter(char *s);
 int getMax(int *a, int n);
 
-int showAll(int *a, int index);
-
-int showMax(int *a, int index);
-
-void show(int *a, int n, int (*showed)(int* a, int index));
-
-int main()
+void update()
 {
     char s[MAX_LENGTH] = "";
     char inputPrompt[] = "Please enter string: ";
@@ -33,26 +48,74 @@ int main()
     }
 
     int *freq = getFrequencesOfCharacter(s);
-    
-    printf("Times of appearance for each character:\n");
-    show(freq, NUM_ALPHABET, showAll);
 
-    printf("---------------------------------\n");
+    printf("Times of appearance for each character:\n");
+    SHOW_FREQUENCES(freq, TRUE);
+
+    int max = getMax(freq, NUM_ALPHABET);
     printf("Characters that appears the most:\n");
-    show(freq, NUM_ALPHABET, showMax);
+    SHOW_FREQUENCES(freq, (freq[i] == max));
 
     free(freq);
+}
+
+int main()
+{
+    while(TRUE)
+    {
+        update();
+        char choise = 0;
+        
+        while((choise != ENTER) && (choise != ESC))
+        {
+            printf("Do you wish to continue? (Enter for yes, Esc for no)\n");
+            choise = getch();
+        }
+
+        switch(choise)
+        {
+            case ENTER:
+                break;
+            case ESC:
+                exit(EXIT_SUCCESS);
+        }
+    }
     return 0;
 }
 
-bool inputChar(char *c, char *msg)
-{
-    __fpurge(stdin);
-    printf("%s", msg);
-    *c = getchar();
+int getch(){
 
-    return true;
+    int                 ret;
+    struct termios      back;
+    struct termios      tmp;
+    int fd =            0;      //stdin
+
+    tcgetattr(fd, &back);       // a backup
+    tcgetattr(fd, &tmp);
+
+    // code get from man page
+    tmp.c_iflag &= ~(IGNBRK | BRKINT | PARMRK | ISTRIP
+                   | INLCR | IGNCR | ICRNL | IXON);
+    tmp.c_oflag &= ~OPOST;
+tmp.c_lflag &= ~(ECHO | ECHONL | ICANON | ISIG | IEXTEN);
+
+    tmp.c_cflag &= ~(CSIZE | PARENB);
+    tmp.c_cflag |= CS8;
+    // endof man page
+
+    // apply configuration
+    tcsetattr(fd, TCSANOW, &tmp);
+
+    ret=getchar();
+
+    // reset back the configuration
+    tcsetattr(fd, TCSANOW, &back);
+
+    return ret;
 }
+
+
+
 
 bool inputString(char *s, char *msg, const int LENGTH)
 {
@@ -115,35 +178,4 @@ int getMax(int *a, int n)
     }
 
     return max;
-}
-
-int showAll(int *a, int index)
-{
-    return TRUE;
-}
-
-int showMax(int *a, int index)
-{
-    static int max = getMax(a, NUM_ALPHABET);
-
-    return (a[index] == max);
-}
-
-void show(int *a, int n, int (*showed)(int* a, int index))
-{
-    for (int i = 0; i < n; i++)
-    {
-        if(showed(a, i) && a[i] > 0)
-            printf("%3c ", i + 'a');
-    }
-
-    printf("\n");
-    
-    for(int i = 0; i < n; i++)
-    {
-        if(showed(a, i) && a[i] > 0)
-            printf("%3d ", a[i]);
-    }
-
-    printf("\n");
 }
