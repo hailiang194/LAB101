@@ -9,23 +9,7 @@
 #define TRUE 1
 #define FALSE 0
 
-int promptUser(int *n, char *msg, const int MIN, const int MAX)
-{
-    __fpurge(stdin);
-	char temp;
-	printf("%s", msg);
-
-
-	if(scanf("%d%c", n, &temp) == 2)
-	{
-		if((temp == '\n') && ((*n >= MIN) && (*n <= MAX)))
-			return TRUE;
-	}
-
-
-	return FALSE;
-}
-
+int promptUser(int *n, char *msg, const int MIN, const int MAX);
 
 void swap(int *a, int *b);
 void quicksort(int *a, int start, int end);
@@ -71,6 +55,23 @@ int main()
 
     free(a);
     return 0;
+}
+
+int promptUser(int *n, char *msg, const int MIN, const int MAX)
+{
+    __fpurge(stdin);
+	char temp;
+	printf("%s", msg);
+
+
+	if(scanf("%d%c", n, &temp) == 2)
+	{
+		if((temp == '\n') && ((*n >= MIN) && (*n <= MAX)))
+			return TRUE;
+	}
+
+
+	return FALSE;
 }
 
 void swap(int *a, int *b)
