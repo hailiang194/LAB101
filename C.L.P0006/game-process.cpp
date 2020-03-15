@@ -21,6 +21,13 @@ void GameProcess::missLife(Game &game)
 
 bool GameProcess::isHiddenChar(Game &game, char alpha)
 {
+    if(!isalpha(alpha))
+    {
+        return true;
+    }
+
+    //alpha = tolower(alpha);
+
     if(game.hasSelected(alpha))
     {
         return false;

@@ -1,6 +1,12 @@
-hello
-fiend
-how
-is
-it
-going
+Viet Nam
+Hanoi
+Son La
+FPT University
+pointer
+cat
+copy
+Laos
+laptop
+watermelon
+wine
+cookies

@@ -93,10 +93,14 @@ void Scence::mainGame(ReadLines &words)
         printf("Here is your puzzle:\n");
         for(int i = 0; i < strlen(word); i++)
         {
-            if(game.hasSelected(word[i]))
-                printf("%c ", toupper(word[i]));
-            else
+            if(!isalpha(word[i]))
+            {
+                printf("%c ", word[i]);
+            }
+            else if(GameProcess::isHiddenChar(game, word[i]))
                 printf("%c ", HIDDEN_CHAR);
+            else
+                printf("%c ", toupper(word[i]));
         }
 
         printf("\n");
@@ -105,8 +109,13 @@ void Scence::mainGame(ReadLines &words)
         char guessPrompt[] = "Please enter your guess.\n";
         inputChar(guess, guessPrompt);
 
+
         CLEAN_SCREEN;
-        if(GameProcess::isWrongGuess(game, guess))
+        if(!isalpha(guess))
+        {
+            printf("Guess must be a character in alphabet.\n");
+        }
+        else if(GameProcess::isWrongGuess(game, guess))
         {
             printf("Sorry, that letter is NOT in the puzzle.\n");
             GameProcess::missLife(game);
