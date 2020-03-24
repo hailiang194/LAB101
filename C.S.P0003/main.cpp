@@ -115,9 +115,12 @@ void insert(int *a, int *n, int appendValue)
     (*n)++;
     a = (int *)realloc(a, (*n) * sizeof(int));
 
+    
+
     int i = 0;
     for(i = *n - 1; i >= 1; i--)
     {
+
         a[i] = a[i - 1];
         if(a[i] <= appendValue)
         {
