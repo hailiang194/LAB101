@@ -73,33 +73,51 @@ clean: src/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all:
+src/all: src/object/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
-src/preinstall:
+src/preinstall: src/object/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean:
+src/clean: src/object/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/object
+
+# Recursive "all" directory target.
+src/object/all: src/object/CMakeFiles/slot-machine.dir/all
+
+.PHONY : src/object/all
+
+# Recursive "preinstall" directory target.
+src/object/preinstall:
+
+.PHONY : src/object/preinstall
+
+# Recursive "clean" directory target.
+src/object/clean: src/object/CMakeFiles/slot-machine.dir/clean
+
+.PHONY : src/object/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/slotmachine_game.dir
 
 # All Build rule for target.
-CMakeFiles/slotmachine_game.dir/all:
+CMakeFiles/slotmachine_game.dir/all: src/object/CMakeFiles/slot-machine.dir/all
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/depend
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=1,2 "Built target slotmachine_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=3,4 "Built target slotmachine_game"
 .PHONY : CMakeFiles/slotmachine_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/slotmachine_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/slotmachine_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : CMakeFiles/slotmachine_game.dir/rule
@@ -113,6 +131,33 @@ slotmachine_game: CMakeFiles/slotmachine_game.dir/rule
 CMakeFiles/slotmachine_game.dir/clean:
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/clean
 .PHONY : CMakeFiles/slotmachine_game.dir/clean
+
+#=============================================================================
+# Target rules for target src/object/CMakeFiles/slot-machine.dir
+
+# All Build rule for target.
+src/object/CMakeFiles/slot-machine.dir/all:
+	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/depend
+	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=1,2 "Built target slot-machine"
+.PHONY : src/object/CMakeFiles/slot-machine.dir/all
+
+# Build rule for subdir invocation for target.
+src/object/CMakeFiles/slot-machine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/object/CMakeFiles/slot-machine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
+.PHONY : src/object/CMakeFiles/slot-machine.dir/rule
+
+# Convenience name for target.
+slot-machine: src/object/CMakeFiles/slot-machine.dir/rule
+
+.PHONY : slot-machine
+
+# clean rule for target.
+src/object/CMakeFiles/slot-machine.dir/clean:
+	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/clean
+.PHONY : src/object/CMakeFiles/slot-machine.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/progress.marks
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named slotmachine_game
+# Convenience name for target.
+src/object/CMakeFiles/slot-machine.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/CMakeFiles/slot-machine.dir/rule
+.PHONY : src/object/CMakeFiles/slot-machine.dir/rule
 
-# Build rule for target.
-slotmachine_game: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slotmachine_game
-.PHONY : slotmachine_game
+# Convenience name for target.
+slot-machine: src/object/CMakeFiles/slot-machine.dir/rule
 
-# fast build rule for target.
-slotmachine_game/fast:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/build
-.PHONY : slotmachine_game/fast
-
-#=============================================================================
-# Target rules for targets named slot-machine
-
-# Build rule for target.
-slot-machine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slot-machine
 .PHONY : slot-machine
 
 # fast build rule for target.
 slot-machine/fast:
-	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/build
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/build
 .PHONY : slot-machine/fast
 
-src/main.o: src/main.cpp.o
+slot-machine.o: slot-machine.cpp.o
 
-.PHONY : src/main.o
+.PHONY : slot-machine.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+slot-machine.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/slot-machine.cpp.o
+.PHONY : slot-machine.cpp.o
 
-src/main.i: src/main.cpp.i
+slot-machine.i: slot-machine.cpp.i
 
-.PHONY : src/main.i
+.PHONY : slot-machine.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+slot-machine.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/slot-machine.cpp.i
+.PHONY : slot-machine.cpp.i
 
-src/main.s: src/main.cpp.s
+slot-machine.s: slot-machine.cpp.s
 
-.PHONY : src/main.s
+.PHONY : slot-machine.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+slot-machine.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/slot-machine.cpp.s
+.PHONY : slot-machine.cpp.s
 
 # Help Target
 help:
@@ -171,11 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... slotmachine_game"
 	@echo "... slot-machine"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... slot-machine.o"
+	@echo "... slot-machine.i"
+	@echo "... slot-machine.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

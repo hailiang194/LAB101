@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/slotmachine_game.dir/src/main.cpp.o  -o slotmachine_game 
+/usr/bin/c++    -rdynamic CMakeFiles/slotmachine_game.dir/src/main.cpp.o  -o slotmachine_game  src/object/libslot-machine.a 

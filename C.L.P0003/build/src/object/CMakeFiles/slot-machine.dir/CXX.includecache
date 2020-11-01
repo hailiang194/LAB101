@@ -6,10 +6,8 @@
 
 #IncludeRegexTransform: 
 
-/home/hailiang194/Documents/LAB101/C.L.P0003/src/main.cpp
-iostream
--
-object/slot-machine.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.cpp
+./slot-machine.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.hpp
 
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.hpp
