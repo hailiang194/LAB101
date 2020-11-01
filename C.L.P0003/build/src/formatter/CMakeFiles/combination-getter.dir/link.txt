@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcombination-getter.a  CMakeFiles/combination-getter.dir/combination-getter.cpp.o
+/usr/bin/ranlib libcombination-getter.a

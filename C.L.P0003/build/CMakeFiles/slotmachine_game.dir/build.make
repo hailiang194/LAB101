@@ -80,6 +80,8 @@ slotmachine_game_EXTERNAL_OBJECTS =
 slotmachine_game: CMakeFiles/slotmachine_game.dir/src/main.cpp.o
 slotmachine_game: CMakeFiles/slotmachine_game.dir/build.make
 slotmachine_game: src/object/libslot-machine.a
+slotmachine_game: src/formatter/libcombination-getter.a
+slotmachine_game: src/object/libslot-machine.a
 slotmachine_game: CMakeFiles/slotmachine_game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable slotmachine_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slotmachine_game.dir/link.txt --verbose=$(VERBOSE)

@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/progress.marks
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/formatter/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/formatter/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,84 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/formatter/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/formatter/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named slotmachine_game
+# Convenience name for target.
+src/formatter/CMakeFiles/combination-getter.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/formatter/CMakeFiles/combination-getter.dir/rule
+.PHONY : src/formatter/CMakeFiles/combination-getter.dir/rule
 
-# Build rule for target.
-slotmachine_game: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slotmachine_game
-.PHONY : slotmachine_game
+# Convenience name for target.
+combination-getter: src/formatter/CMakeFiles/combination-getter.dir/rule
 
-# fast build rule for target.
-slotmachine_game/fast:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/build
-.PHONY : slotmachine_game/fast
-
-#=============================================================================
-# Target rules for targets named slot-machine
-
-# Build rule for target.
-slot-machine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slot-machine
-.PHONY : slot-machine
-
-# fast build rule for target.
-slot-machine/fast:
-	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/build
-.PHONY : slot-machine/fast
-
-#=============================================================================
-# Target rules for targets named combination-getter
-
-# Build rule for target.
-combination-getter: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 combination-getter
 .PHONY : combination-getter
 
 # fast build rule for target.
 combination-getter/fast:
-	$(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/build
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/build
 .PHONY : combination-getter/fast
 
-src/main.o: src/main.cpp.o
+combination-getter.o: combination-getter.cpp.o
 
-.PHONY : src/main.o
+.PHONY : combination-getter.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+combination-getter.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/combination-getter.cpp.o
+.PHONY : combination-getter.cpp.o
 
-src/main.i: src/main.cpp.i
+combination-getter.i: combination-getter.cpp.i
 
-.PHONY : src/main.i
+.PHONY : combination-getter.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+combination-getter.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/combination-getter.cpp.i
+.PHONY : combination-getter.cpp.i
 
-src/main.s: src/main.cpp.s
+combination-getter.s: combination-getter.cpp.s
 
-.PHONY : src/main.s
+.PHONY : combination-getter.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+combination-getter.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/combination-getter.cpp.s
+.PHONY : combination-getter.cpp.s
 
 # Help Target
 help:
@@ -184,12 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... slotmachine_game"
-	@echo "... slot-machine"
 	@echo "... combination-getter"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... combination-getter.o"
+	@echo "... combination-getter.i"
+	@echo "... combination-getter.s"
 .PHONY : help
 
 
@@ -201,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

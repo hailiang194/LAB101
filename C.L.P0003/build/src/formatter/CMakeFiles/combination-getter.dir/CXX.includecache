@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/combination-getter.cpp
+combination-getter.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/combination-getter.hpp
+
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/combination-getter.hpp
 array
 -
@@ -13,14 +17,6 @@ cstddef
 -
 ../object/slot-machine.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.hpp
-
-/home/hailiang194/Documents/LAB101/C.L.P0003/src/main.cpp
-iostream
--
-object/slot-machine.hpp
-/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.hpp
-formatter/combination-getter.hpp
-/home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/combination-getter.hpp
 
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.hpp
 cstddef

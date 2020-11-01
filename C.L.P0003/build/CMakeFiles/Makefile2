@@ -74,18 +74,39 @@ clean: src/clean
 
 # Recursive "all" directory target.
 src/all: src/object/all
+src/all: src/formatter/all
 
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
 src/preinstall: src/object/preinstall
+src/preinstall: src/formatter/preinstall
 
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
 src/clean: src/object/clean
+src/clean: src/formatter/clean
 
 .PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/formatter
+
+# Recursive "all" directory target.
+src/formatter/all: src/formatter/CMakeFiles/combination-getter.dir/all
+
+.PHONY : src/formatter/all
+
+# Recursive "preinstall" directory target.
+src/formatter/preinstall:
+
+.PHONY : src/formatter/preinstall
+
+# Recursive "clean" directory target.
+src/formatter/clean: src/formatter/CMakeFiles/combination-getter.dir/clean
+
+.PHONY : src/formatter/clean
 
 #=============================================================================
 # Directory level rules for directory src/object
@@ -110,14 +131,15 @@ src/object/clean: src/object/CMakeFiles/slot-machine.dir/clean
 
 # All Build rule for target.
 CMakeFiles/slotmachine_game.dir/all: src/object/CMakeFiles/slot-machine.dir/all
+CMakeFiles/slotmachine_game.dir/all: src/formatter/CMakeFiles/combination-getter.dir/all
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/depend
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=3,4 "Built target slotmachine_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=5,6 "Built target slotmachine_game"
 .PHONY : CMakeFiles/slotmachine_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/slotmachine_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/slotmachine_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : CMakeFiles/slotmachine_game.dir/rule
@@ -139,7 +161,7 @@ CMakeFiles/slotmachine_game.dir/clean:
 src/object/CMakeFiles/slot-machine.dir/all:
 	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/depend
 	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=1,2 "Built target slot-machine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=3,4 "Built target slot-machine"
 .PHONY : src/object/CMakeFiles/slot-machine.dir/all
 
 # Build rule for subdir invocation for target.
@@ -158,6 +180,33 @@ slot-machine: src/object/CMakeFiles/slot-machine.dir/rule
 src/object/CMakeFiles/slot-machine.dir/clean:
 	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/clean
 .PHONY : src/object/CMakeFiles/slot-machine.dir/clean
+
+#=============================================================================
+# Target rules for target src/formatter/CMakeFiles/combination-getter.dir
+
+# All Build rule for target.
+src/formatter/CMakeFiles/combination-getter.dir/all: src/object/CMakeFiles/slot-machine.dir/all
+	$(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/depend
+	$(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=1,2 "Built target combination-getter"
+.PHONY : src/formatter/CMakeFiles/combination-getter.dir/all
+
+# Build rule for subdir invocation for target.
+src/formatter/CMakeFiles/combination-getter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/formatter/CMakeFiles/combination-getter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
+.PHONY : src/formatter/CMakeFiles/combination-getter.dir/rule
+
+# Convenience name for target.
+combination-getter: src/formatter/CMakeFiles/combination-getter.dir/rule
+
+.PHONY : combination-getter
+
+# clean rule for target.
+src/formatter/CMakeFiles/combination-getter.dir/clean:
+	$(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/clean
+.PHONY : src/formatter/CMakeFiles/combination-getter.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
