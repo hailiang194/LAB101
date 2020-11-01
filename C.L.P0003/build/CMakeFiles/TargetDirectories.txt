@@ -5,6 +5,7 @@
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/CMakeFiles/edit_cache.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/rebuild_cache.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/edit_cache.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/user.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/slot-machine.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/rebuild_cache.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/edit_cache.dir

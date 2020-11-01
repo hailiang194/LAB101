@@ -123,6 +123,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/slotmachine_game.dir/DependInfo.cmake"
+  "src/object/CMakeFiles/user.dir/DependInfo.cmake"
   "src/object/CMakeFiles/slot-machine.dir/DependInfo.cmake"
   "src/formatter/CMakeFiles/combination-getter.dir/DependInfo.cmake"
   )

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/object/CMakeFiles/user.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/CMakeFiles/user.dir/rule
+.PHONY : src/object/CMakeFiles/user.dir/rule
+
+# Convenience name for target.
+user: src/object/CMakeFiles/user.dir/rule
+
+.PHONY : user
+
+# fast build rule for target.
+user/fast:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/build
+.PHONY : user/fast
+
+# Convenience name for target.
 src/object/CMakeFiles/slot-machine.dir/rule:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/object/CMakeFiles/slot-machine.dir/rule
 .PHONY : src/object/CMakeFiles/slot-machine.dir/rule
@@ -152,6 +167,33 @@ slot-machine.cpp.s:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/slot-machine.cpp.s
 .PHONY : slot-machine.cpp.s
 
+user.o: user.cpp.o
+
+.PHONY : user.o
+
+# target to build an object file
+user.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/user.cpp.o
+.PHONY : user.cpp.o
+
+user.i: user.cpp.i
+
+.PHONY : user.i
+
+# target to preprocess a source file
+user.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/user.cpp.i
+.PHONY : user.cpp.i
+
+user.s: user.cpp.s
+
+.PHONY : user.s
+
+# target to generate assembly for a file
+user.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/user.cpp.s
+.PHONY : user.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,10 +202,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... user"
 	@echo "... slot-machine"
 	@echo "... slot-machine.o"
 	@echo "... slot-machine.i"
 	@echo "... slot-machine.s"
+	@echo "... user.o"
+	@echo "... user.i"
+	@echo "... user.s"
 .PHONY : help
 
 

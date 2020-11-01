@@ -124,6 +124,19 @@ slotmachine_game/fast:
 .PHONY : slotmachine_game/fast
 
 #=============================================================================
+# Target rules for targets named user
+
+# Build rule for target.
+user: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 user
+.PHONY : user
+
+# fast build rule for target.
+user/fast:
+	$(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/build
+.PHONY : user/fast
+
+#=============================================================================
 # Target rules for targets named slot-machine
 
 # Build rule for target.
@@ -185,6 +198,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... slotmachine_game"
+	@echo "... user"
 	@echo "... slot-machine"
 	@echo "... combination-getter"
 	@echo "... src/main.o"

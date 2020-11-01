@@ -16,6 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/slot-machine.dir/DependInfo.cmake"
   "/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/combination-getter.dir/DependInfo.cmake"
+  "/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/CMakeFiles/user.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
