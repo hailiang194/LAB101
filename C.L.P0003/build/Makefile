@@ -176,6 +176,19 @@ combination-getter/fast:
 .PHONY : combination-getter/fast
 
 #=============================================================================
+# Target rules for targets named game-loader
+
+# Build rule for target.
+game-loader: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 game-loader
+.PHONY : game-loader
+
+# fast build rule for target.
+game-loader/fast:
+	$(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/build
+.PHONY : game-loader/fast
+
+#=============================================================================
 # Target rules for targets named game-saver
 
 # Build rule for target.
@@ -228,6 +241,7 @@ help:
 	@echo "... slot-machine"
 	@echo "... prize-getter"
 	@echo "... combination-getter"
+	@echo "... game-loader"
 	@echo "... game-saver"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

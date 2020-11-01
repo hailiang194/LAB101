@@ -4,6 +4,7 @@
 #include"object/user.hpp"
 #include"formatter/prize-getter.hpp"
 #include"game-saver/saver.hpp"
+#include"game-saver/loader.hpp"
 
 int main()
 {
@@ -36,5 +37,11 @@ int main()
 
     PrizeGetter prizeGetter;
     std::cout << "Prize=" << prizeGetter.getPrize(getter.get(slot)) << std::endl; 
+
+    GameLoader loader(user);
+    std::cout << "Loading" << std::endl;
+
+    loader.load();
+    std::cout << "Coin=" << user.coin() << std::endl;
     return 0;
 }

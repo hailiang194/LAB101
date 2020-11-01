@@ -6,6 +6,7 @@
 
 #include<cmath>
 #include<limits>
+#include"../game-saver/loader.hpp"
 
 int compare(double firstNumber, double secondNumber, double epsilon=std::numeric_limits<double>::epsilon());
 
@@ -26,6 +27,8 @@ public:
 
     void addCoin(coin_t coin);
     coin_t coinOut(); 
+
+    friend class GameLoader;
 protected:
     coin_t m_coin;
 };

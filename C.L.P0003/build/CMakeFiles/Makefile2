@@ -117,6 +117,7 @@ src/formatter/clean: src/formatter/CMakeFiles/combination-getter.dir/clean
 # Directory level rules for directory src/game-saver
 
 # Recursive "all" directory target.
+src/game-saver/all: src/game-saver/CMakeFiles/game-loader.dir/all
 src/game-saver/all: src/game-saver/CMakeFiles/game-saver.dir/all
 
 .PHONY : src/game-saver/all
@@ -127,6 +128,7 @@ src/game-saver/preinstall:
 .PHONY : src/game-saver/preinstall
 
 # Recursive "clean" directory target.
+src/game-saver/clean: src/game-saver/CMakeFiles/game-loader.dir/clean
 src/game-saver/clean: src/game-saver/CMakeFiles/game-saver.dir/clean
 
 .PHONY : src/game-saver/clean
@@ -162,12 +164,12 @@ CMakeFiles/slotmachine_game.dir/all: src/formatter/CMakeFiles/combination-getter
 CMakeFiles/slotmachine_game.dir/all: src/game-saver/CMakeFiles/game-saver.dir/all
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/depend
 	$(MAKE) -f CMakeFiles/slotmachine_game.dir/build.make CMakeFiles/slotmachine_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=9,10 "Built target slotmachine_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=11,12 "Built target slotmachine_game"
 .PHONY : CMakeFiles/slotmachine_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/slotmachine_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/slotmachine_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : CMakeFiles/slotmachine_game.dir/rule
@@ -186,15 +188,15 @@ CMakeFiles/slotmachine_game.dir/clean:
 # Target rules for target src/object/CMakeFiles/user.dir
 
 # All Build rule for target.
-src/object/CMakeFiles/user.dir/all:
+src/object/CMakeFiles/user.dir/all: src/game-saver/CMakeFiles/game-loader.dir/all
 	$(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/depend
 	$(MAKE) -f src/object/CMakeFiles/user.dir/build.make src/object/CMakeFiles/user.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=11,12 "Built target user"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=13,14 "Built target user"
 .PHONY : src/object/CMakeFiles/user.dir/all
 
 # Build rule for subdir invocation for target.
 src/object/CMakeFiles/user.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 src/object/CMakeFiles/user.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : src/object/CMakeFiles/user.dir/rule
@@ -216,7 +218,7 @@ src/object/CMakeFiles/user.dir/clean:
 src/object/CMakeFiles/slot-machine.dir/all:
 	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/depend
 	$(MAKE) -f src/object/CMakeFiles/slot-machine.dir/build.make src/object/CMakeFiles/slot-machine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=7,8 "Built target slot-machine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=9,10 "Built target slot-machine"
 .PHONY : src/object/CMakeFiles/slot-machine.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,12 +245,12 @@ src/object/CMakeFiles/slot-machine.dir/clean:
 src/formatter/CMakeFiles/prize-getter.dir/all: src/object/CMakeFiles/user.dir/all
 	$(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/depend
 	$(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=5,6 "Built target prize-getter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=7,8 "Built target prize-getter"
 .PHONY : src/formatter/CMakeFiles/prize-getter.dir/all
 
 # Build rule for subdir invocation for target.
 src/formatter/CMakeFiles/prize-getter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/formatter/CMakeFiles/prize-getter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : src/formatter/CMakeFiles/prize-getter.dir/rule
@@ -291,18 +293,45 @@ src/formatter/CMakeFiles/combination-getter.dir/clean:
 .PHONY : src/formatter/CMakeFiles/combination-getter.dir/clean
 
 #=============================================================================
+# Target rules for target src/game-saver/CMakeFiles/game-loader.dir
+
+# All Build rule for target.
+src/game-saver/CMakeFiles/game-loader.dir/all:
+	$(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/depend
+	$(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=3,4 "Built target game-loader"
+.PHONY : src/game-saver/CMakeFiles/game-loader.dir/all
+
+# Build rule for subdir invocation for target.
+src/game-saver/CMakeFiles/game-loader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/game-saver/CMakeFiles/game-loader.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
+.PHONY : src/game-saver/CMakeFiles/game-loader.dir/rule
+
+# Convenience name for target.
+game-loader: src/game-saver/CMakeFiles/game-loader.dir/rule
+
+.PHONY : game-loader
+
+# clean rule for target.
+src/game-saver/CMakeFiles/game-loader.dir/clean:
+	$(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/clean
+.PHONY : src/game-saver/CMakeFiles/game-loader.dir/clean
+
+#=============================================================================
 # Target rules for target src/game-saver/CMakeFiles/game-saver.dir
 
 # All Build rule for target.
 src/game-saver/CMakeFiles/game-saver.dir/all: src/object/CMakeFiles/user.dir/all
 	$(MAKE) -f src/game-saver/CMakeFiles/game-saver.dir/build.make src/game-saver/CMakeFiles/game-saver.dir/depend
 	$(MAKE) -f src/game-saver/CMakeFiles/game-saver.dir/build.make src/game-saver/CMakeFiles/game-saver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=3,4 "Built target game-saver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles --progress-num=5,6 "Built target game-saver"
 .PHONY : src/game-saver/CMakeFiles/game-saver.dir/all
 
 # Build rule for subdir invocation for target.
 src/game-saver/CMakeFiles/game-saver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 src/game-saver/CMakeFiles/game-saver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hailiang194/Documents/LAB101/C.L.P0003/build/CMakeFiles 0
 .PHONY : src/game-saver/CMakeFiles/game-saver.dir/rule

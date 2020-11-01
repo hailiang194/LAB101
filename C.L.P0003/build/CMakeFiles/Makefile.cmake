@@ -129,5 +129,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/object/CMakeFiles/slot-machine.dir/DependInfo.cmake"
   "src/formatter/CMakeFiles/prize-getter.dir/DependInfo.cmake"
   "src/formatter/CMakeFiles/combination-getter.dir/DependInfo.cmake"
+  "src/game-saver/CMakeFiles/game-loader.dir/DependInfo.cmake"
   "src/game-saver/CMakeFiles/game-saver.dir/DependInfo.cmake"
   )

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgame-loader.a  CMakeFiles/game-loader.dir/loader.cpp.o
+/usr/bin/ranlib libgame-loader.a

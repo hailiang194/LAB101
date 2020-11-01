@@ -14,6 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/game-loader.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

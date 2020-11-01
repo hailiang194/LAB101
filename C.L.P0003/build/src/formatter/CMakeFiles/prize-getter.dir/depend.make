@@ -3,5 +3,7 @@
 
 src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.o: ../src/formatter/prize-getter.cpp
 src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.o: ../src/formatter/prize-getter.hpp
+src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.o: ../src/game-saver/default.hpp
+src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.o: ../src/game-saver/loader.hpp
 src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.o: ../src/object/user.hpp
 

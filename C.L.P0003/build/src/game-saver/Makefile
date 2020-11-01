@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/game-saver/CMakeFiles/game-loader.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/game-saver/CMakeFiles/game-loader.dir/rule
+.PHONY : src/game-saver/CMakeFiles/game-loader.dir/rule
+
+# Convenience name for target.
+game-loader: src/game-saver/CMakeFiles/game-loader.dir/rule
+
+.PHONY : game-loader
+
+# fast build rule for target.
+game-loader/fast:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/build
+.PHONY : game-loader/fast
+
+# Convenience name for target.
 src/game-saver/CMakeFiles/game-saver.dir/rule:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/game-saver/CMakeFiles/game-saver.dir/rule
 .PHONY : src/game-saver/CMakeFiles/game-saver.dir/rule
@@ -124,6 +139,33 @@ game-saver: src/game-saver/CMakeFiles/game-saver.dir/rule
 game-saver/fast:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/game-saver/CMakeFiles/game-saver.dir/build.make src/game-saver/CMakeFiles/game-saver.dir/build
 .PHONY : game-saver/fast
+
+loader.o: loader.cpp.o
+
+.PHONY : loader.o
+
+# target to build an object file
+loader.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/loader.cpp.o
+.PHONY : loader.cpp.o
+
+loader.i: loader.cpp.i
+
+.PHONY : loader.i
+
+# target to preprocess a source file
+loader.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/loader.cpp.i
+.PHONY : loader.cpp.i
+
+loader.s: loader.cpp.s
+
+.PHONY : loader.s
+
+# target to generate assembly for a file
+loader.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/game-saver/CMakeFiles/game-loader.dir/build.make src/game-saver/CMakeFiles/game-loader.dir/loader.cpp.s
+.PHONY : loader.cpp.s
 
 saver.o: saver.cpp.o
 
@@ -160,7 +202,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... game-loader"
 	@echo "... game-saver"
+	@echo "... loader.o"
+	@echo "... loader.i"
+	@echo "... loader.s"
 	@echo "... saver.o"
 	@echo "... saver.i"
 	@echo "... saver.s"
