@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/slotmachine_game.dir/src/main.cpp.o  -o slotmachine_game  src/object/libslot-machine.a src/formatter/libcombination-getter.a src/object/libuser.a src/formatter/libprize-getter.a src/object/libslot-machine.a src/object/libuser.a 
+/usr/bin/c++    -rdynamic CMakeFiles/slotmachine_game.dir/src/main.cpp.o  -o slotmachine_game  src/object/libslot-machine.a src/formatter/libcombination-getter.a src/object/libuser.a src/formatter/libprize-getter.a src/game-saver/libgame-saver.a src/object/libslot-machine.a src/object/libuser.a 

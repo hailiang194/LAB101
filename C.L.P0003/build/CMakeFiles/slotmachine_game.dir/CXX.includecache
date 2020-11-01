@@ -18,6 +18,18 @@ cstddef
 ../object/user.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
 
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/default.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/saver.hpp
+fstream
+-
+string
+-
+default.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/default.hpp
+../object/user.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
+
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/main.cpp
 iostream
 -
@@ -29,6 +41,8 @@ object/user.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
 formatter/prize-getter.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/prize-getter.hpp
+game-saver/saver.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/saver.hpp
 
 /home/hailiang194/Documents/LAB101/C.L.P0003/src/object/slot-machine.hpp
 cstddef

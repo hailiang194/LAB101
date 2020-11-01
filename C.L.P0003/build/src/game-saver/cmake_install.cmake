@@ -1,4 +1,4 @@
-# Install script for directory: /home/hailiang194/Documents/LAB101/C.L.P0003/src
+# Install script for directory: /home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,13 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/cmake_install.cmake")
-  include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/cmake_install.cmake")
-  include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/cmake_install.cmake")
-
 endif()
 

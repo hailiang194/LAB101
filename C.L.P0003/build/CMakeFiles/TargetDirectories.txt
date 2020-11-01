@@ -11,3 +11,6 @@
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/rebuild_cache.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/prize-getter.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/CMakeFiles/combination-getter.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/rebuild_cache.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/edit_cache.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/game-saver.dir

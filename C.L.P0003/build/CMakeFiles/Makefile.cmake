@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
   "../src/formatter/CMakeLists.txt"
+  "../src/game-saver/CMakeLists.txt"
   "../src/object/CMakeLists.txt"
   "/usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c"
@@ -118,6 +119,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/object/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/formatter/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/game-saver/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -127,4 +129,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/object/CMakeFiles/slot-machine.dir/DependInfo.cmake"
   "src/formatter/CMakeFiles/prize-getter.dir/DependInfo.cmake"
   "src/formatter/CMakeFiles/combination-getter.dir/DependInfo.cmake"
+  "src/game-saver/CMakeFiles/game-saver.dir/DependInfo.cmake"
   )

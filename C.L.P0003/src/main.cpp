@@ -3,6 +3,7 @@
 #include"formatter/combination-getter.hpp"
 #include"object/user.hpp"
 #include"formatter/prize-getter.hpp"
+#include"game-saver/saver.hpp"
 
 int main()
 {
@@ -23,7 +24,13 @@ int main()
     std::cout << "Able to remove 10.25 coin? " << user.isEnoughCoinFor(10.25) << std::endl;
     std::cout << "Able to remove 9.75 coin? " << user.isEnoughCoinFor(9.75) << std::endl;
     user.addCoin(20);
+    
+    GameSaver saver(user);
     std::cout << "Add 20 coin then " << user.coin() << std::endl;
+    std::cout << "Save" << std::endl;
+
+    saver.save();
+
     std::cout << "Cash out" << user.coinOut() << std::endl;
     std::cout << "Coin=" << user.coin() << std::endl;
 

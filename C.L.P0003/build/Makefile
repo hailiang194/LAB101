@@ -175,6 +175,19 @@ combination-getter/fast:
 	$(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/build
 .PHONY : combination-getter/fast
 
+#=============================================================================
+# Target rules for targets named game-saver
+
+# Build rule for target.
+game-saver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 game-saver
+.PHONY : game-saver
+
+# fast build rule for target.
+game-saver/fast:
+	$(MAKE) -f src/game-saver/CMakeFiles/game-saver.dir/build.make src/game-saver/CMakeFiles/game-saver.dir/build
+.PHONY : game-saver/fast
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -215,6 +228,7 @@ help:
 	@echo "... slot-machine"
 	@echo "... prize-getter"
 	@echo "... combination-getter"
+	@echo "... game-saver"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

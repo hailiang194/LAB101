@@ -83,6 +83,7 @@ slotmachine_game: src/object/libslot-machine.a
 slotmachine_game: src/formatter/libcombination-getter.a
 slotmachine_game: src/object/libuser.a
 slotmachine_game: src/formatter/libprize-getter.a
+slotmachine_game: src/game-saver/libgame-saver.a
 slotmachine_game: src/object/libslot-machine.a
 slotmachine_game: src/object/libuser.a
 slotmachine_game: CMakeFiles/slotmachine_game.dir/link.txt

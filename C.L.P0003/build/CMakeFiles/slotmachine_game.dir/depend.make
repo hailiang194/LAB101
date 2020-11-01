@@ -3,6 +3,8 @@
 
 CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/formatter/combination-getter.hpp
 CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/formatter/prize-getter.hpp
+CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/game-saver/default.hpp
+CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/game-saver/saver.hpp
 CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/object/slot-machine.hpp
 CMakeFiles/slotmachine_game.dir/src/main.cpp.o: ../src/object/user.hpp
