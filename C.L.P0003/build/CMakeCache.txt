@@ -212,6 +212,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Dependencies for the target
 combination-getter_LIB_DEPENDS:STATIC=general;slot-machine;
 
+//Dependencies for the target
+prize-getter_LIB_DEPENDS:STATIC=general;user;
+
 //Value Computed by CMake
 slotmachine_game_BINARY_DIR:STATIC=/home/hailiang194/Documents/LAB101/C.L.P0003/build
 

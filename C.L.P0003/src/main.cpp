@@ -2,6 +2,7 @@
 #include"object/slot-machine.hpp"
 #include"formatter/combination-getter.hpp"
 #include"object/user.hpp"
+#include"formatter/prize-getter.hpp"
 
 int main()
 {
@@ -25,5 +26,8 @@ int main()
     std::cout << "Add 20 coin then " << user.coin() << std::endl;
     std::cout << "Cash out" << user.coinOut() << std::endl;
     std::cout << "Coin=" << user.coin() << std::endl;
+
+    PrizeGetter prizeGetter;
+    std::cout << "Prize=" << prizeGetter.getPrize(getter.get(slot)) << std::endl; 
     return 0;
 }

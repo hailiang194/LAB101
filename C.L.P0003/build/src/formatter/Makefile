@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/hailiang194/Documents/LAB101/C.L.P0003/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,21 @@ preinstall/fast:
 depend:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+src/formatter/CMakeFiles/prize-getter.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f CMakeFiles/Makefile2 src/formatter/CMakeFiles/prize-getter.dir/rule
+.PHONY : src/formatter/CMakeFiles/prize-getter.dir/rule
+
+# Convenience name for target.
+prize-getter: src/formatter/CMakeFiles/prize-getter.dir/rule
+
+.PHONY : prize-getter
+
+# fast build rule for target.
+prize-getter/fast:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/build
+.PHONY : prize-getter/fast
 
 # Convenience name for target.
 src/formatter/CMakeFiles/combination-getter.dir/rule:
@@ -152,18 +167,49 @@ combination-getter.cpp.s:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/combination-getter.dir/build.make src/formatter/CMakeFiles/combination-getter.dir/combination-getter.cpp.s
 .PHONY : combination-getter.cpp.s
 
+prize-getter.o: prize-getter.cpp.o
+
+.PHONY : prize-getter.o
+
+# target to build an object file
+prize-getter.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.o
+.PHONY : prize-getter.cpp.o
+
+prize-getter.i: prize-getter.cpp.i
+
+.PHONY : prize-getter.i
+
+# target to preprocess a source file
+prize-getter.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.i
+.PHONY : prize-getter.cpp.i
+
+prize-getter.s: prize-getter.cpp.s
+
+.PHONY : prize-getter.s
+
+# target to generate assembly for a file
+prize-getter.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0003/build && $(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/prize-getter.cpp.s
+.PHONY : prize-getter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... prize-getter"
 	@echo "... combination-getter"
 	@echo "... combination-getter.o"
 	@echo "... combination-getter.i"
 	@echo "... combination-getter.s"
+	@echo "... prize-getter.o"
+	@echo "... prize-getter.i"
+	@echo "... prize-getter.s"
 .PHONY : help
 
 

@@ -150,6 +150,19 @@ slot-machine/fast:
 .PHONY : slot-machine/fast
 
 #=============================================================================
+# Target rules for targets named prize-getter
+
+# Build rule for target.
+prize-getter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prize-getter
+.PHONY : prize-getter
+
+# fast build rule for target.
+prize-getter/fast:
+	$(MAKE) -f src/formatter/CMakeFiles/prize-getter.dir/build.make src/formatter/CMakeFiles/prize-getter.dir/build
+.PHONY : prize-getter/fast
+
+#=============================================================================
 # Target rules for targets named combination-getter
 
 # Build rule for target.
@@ -200,6 +213,7 @@ help:
 	@echo "... slotmachine_game"
 	@echo "... user"
 	@echo "... slot-machine"
+	@echo "... prize-getter"
 	@echo "... combination-getter"
 	@echo "... src/main.o"
 	@echo "... src/main.i"

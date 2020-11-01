@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/prize-getter.cpp
+prize-getter.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/prize-getter.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/formatter/prize-getter.hpp
+../object/user.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
+cmath
+-
+limits
+-
+
