@@ -42,6 +42,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/object/cmake_install.cmake")
   include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/formatter/cmake_install.cmake")
   include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/cmake_install.cmake")
+  include("/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/cmake_install.cmake")
 
 endif()
 

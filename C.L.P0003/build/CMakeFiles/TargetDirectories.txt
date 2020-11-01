@@ -15,3 +15,11 @@
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/edit_cache.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/game-loader.dir
 /home/hailiang194/Documents/LAB101/C.L.P0003/build/src/game-saver/CMakeFiles/game-saver.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/edit_cache.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/cash-out-form.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/play-form.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/main-form.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/form.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/rebuild_cache.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/save-form.dir
+/home/hailiang194/Documents/LAB101/C.L.P0003/build/src/form/CMakeFiles/input.dir

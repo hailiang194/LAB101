@@ -79,14 +79,18 @@ slotmachine_game_EXTERNAL_OBJECTS =
 
 slotmachine_game: CMakeFiles/slotmachine_game.dir/src/main.cpp.o
 slotmachine_game: CMakeFiles/slotmachine_game.dir/build.make
-slotmachine_game: src/object/libslot-machine.a
+slotmachine_game: src/form/libmain-form.a
+slotmachine_game: src/form/libinput.a
+slotmachine_game: src/form/libplay-form.a
 slotmachine_game: src/formatter/libcombination-getter.a
-slotmachine_game: src/object/libuser.a
-slotmachine_game: src/formatter/libprize-getter.a
-slotmachine_game: src/game-saver/libgame-saver.a
-slotmachine_game: src/game-saver/libgame-loader.a
 slotmachine_game: src/object/libslot-machine.a
+slotmachine_game: src/formatter/libprize-getter.a
+slotmachine_game: src/form/libsave-form.a
+slotmachine_game: src/game-saver/libgame-saver.a
+slotmachine_game: src/form/libcash-out-form.a
+slotmachine_game: src/form/libform.a
 slotmachine_game: src/object/libuser.a
+slotmachine_game: src/game-saver/libgame-loader.a
 slotmachine_game: src/object/libuser.a
 slotmachine_game: src/game-saver/libgame-loader.a
 slotmachine_game: CMakeFiles/slotmachine_game.dir/link.txt

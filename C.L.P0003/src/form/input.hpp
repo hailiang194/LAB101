@@ -1,0 +1,17 @@
+#ifndef FORM_INPUT_HPP
+    #define FORM_INPUT_HPP
+
+#include<string>
+#include<limits>
+#include<exception>
+#include<iostream>
+#include<cctype>
+
+namespace Input
+{
+    std::string trim(const std::string& original);
+    int input(const std::string prompt, const int MIN = std::numeric_limits<int>::min(), const int MAX = std::numeric_limits<int>::max());
+    void hold();
+}
+
+#endif //FORM_INPUT_HPP

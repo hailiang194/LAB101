@@ -201,6 +201,84 @@ game-saver/fast:
 	$(MAKE) -f src/game-saver/CMakeFiles/game-saver.dir/build.make src/game-saver/CMakeFiles/game-saver.dir/build
 .PHONY : game-saver/fast
 
+#=============================================================================
+# Target rules for targets named cash-out-form
+
+# Build rule for target.
+cash-out-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cash-out-form
+.PHONY : cash-out-form
+
+# fast build rule for target.
+cash-out-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/cash-out-form.dir/build.make src/form/CMakeFiles/cash-out-form.dir/build
+.PHONY : cash-out-form/fast
+
+#=============================================================================
+# Target rules for targets named play-form
+
+# Build rule for target.
+play-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 play-form
+.PHONY : play-form
+
+# fast build rule for target.
+play-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/play-form.dir/build.make src/form/CMakeFiles/play-form.dir/build
+.PHONY : play-form/fast
+
+#=============================================================================
+# Target rules for targets named main-form
+
+# Build rule for target.
+main-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main-form
+.PHONY : main-form
+
+# fast build rule for target.
+main-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/main-form.dir/build.make src/form/CMakeFiles/main-form.dir/build
+.PHONY : main-form/fast
+
+#=============================================================================
+# Target rules for targets named form
+
+# Build rule for target.
+form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 form
+.PHONY : form
+
+# fast build rule for target.
+form/fast:
+	$(MAKE) -f src/form/CMakeFiles/form.dir/build.make src/form/CMakeFiles/form.dir/build
+.PHONY : form/fast
+
+#=============================================================================
+# Target rules for targets named save-form
+
+# Build rule for target.
+save-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 save-form
+.PHONY : save-form
+
+# fast build rule for target.
+save-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/save-form.dir/build.make src/form/CMakeFiles/save-form.dir/build
+.PHONY : save-form/fast
+
+#=============================================================================
+# Target rules for targets named input
+
+# Build rule for target.
+input: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 input
+.PHONY : input
+
+# fast build rule for target.
+input/fast:
+	$(MAKE) -f src/form/CMakeFiles/input.dir/build.make src/form/CMakeFiles/input.dir/build
+.PHONY : input/fast
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -243,6 +321,12 @@ help:
 	@echo "... combination-getter"
 	@echo "... game-loader"
 	@echo "... game-saver"
+	@echo "... cash-out-form"
+	@echo "... play-form"
+	@echo "... main-form"
+	@echo "... form"
+	@echo "... save-form"
+	@echo "... input"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

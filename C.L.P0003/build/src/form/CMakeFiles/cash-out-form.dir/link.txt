@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcash-out-form.a  CMakeFiles/cash-out-form.dir/cash-out-form.cpp.o
+/usr/bin/ranlib libcash-out-form.a

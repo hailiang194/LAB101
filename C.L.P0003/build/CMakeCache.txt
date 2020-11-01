@@ -210,6 +210,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Dependencies for the target
+cash-out-form_LIB_DEPENDS:STATIC=general;form;general;user;
+
+//Dependencies for the target
 combination-getter_LIB_DEPENDS:STATIC=general;slot-machine;
 
 //Dependencies for the target
@@ -219,7 +222,16 @@ game-loader_LIB_DEPENDS:STATIC=general;user;
 game-saver_LIB_DEPENDS:STATIC=general;user;
 
 //Dependencies for the target
+main-form_LIB_DEPENDS:STATIC=general;form;general;input;general;user;general;slot-machine;general;game-loader;general;play-form;general;save-form;general;cash-out-form;
+
+//Dependencies for the target
+play-form_LIB_DEPENDS:STATIC=general;form;general;user;general;slot-machine;general;combination-getter;general;prize-getter;general;game-saver;
+
+//Dependencies for the target
 prize-getter_LIB_DEPENDS:STATIC=general;user;
+
+//Dependencies for the target
+save-form_LIB_DEPENDS:STATIC=general;form;general;user;general;game-saver;
 
 //Value Computed by CMake
 slotmachine_game_BINARY_DIR:STATIC=/home/hailiang194/Documents/LAB101/C.L.P0003/build
@@ -335,7 +347,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
