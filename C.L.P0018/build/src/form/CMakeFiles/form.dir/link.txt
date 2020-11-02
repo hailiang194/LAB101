@@ -1,0 +1,2 @@
+/usr/bin/ar qc libform.a  CMakeFiles/form.dir/form.cpp.o
+/usr/bin/ranlib libform.a

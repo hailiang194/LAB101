@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.cpp
+input.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
+string
+-
+limits
+-
+exception
+-
+iostream
+-
+cctype
+-
+

@@ -1,0 +1,12 @@
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+add_library(form form.cpp form.hpp)
+add_library(main-form main-form.cpp main-form.hpp)
+add_library(input input.cpp input.hpp)
+add_library(read-form read-form.cpp read-form.hpp)
+add_library(copy-form copy-form.cpp copy-form.hpp)
+target_link_libraries(main-form form input read-form copy-form)
+target_link_libraries(read-form form input)
+target_link_libraries(copy-form form input)

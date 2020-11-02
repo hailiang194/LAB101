@@ -1,0 +1,2 @@
+/usr/bin/ar qc libread-form.a  CMakeFiles/read-form.dir/read-form.cpp.o
+/usr/bin/ranlib libread-form.a
