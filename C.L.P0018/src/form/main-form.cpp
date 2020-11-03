@@ -63,11 +63,23 @@ Form::FormState MainForm::update() const
                 break;
             }
         case MERGE_TWO_FILES:
-            break;
+            {
+                MergeForm form;
+                form.run();
+                break;
+            }
         case LIST_FILES:
-            break;
+            {
+                ListForm form;
+                form.run();
+                break;
+            }
         case DELETE_FILE:
-            break;
+            {
+                DeleteForm form;
+                form.run();
+                break;
+            }
         case EXIT:
             return ExitForm;
             break;

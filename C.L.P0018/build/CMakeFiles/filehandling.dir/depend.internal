@@ -3,8 +3,11 @@
 
 CMakeFiles/filehandling.dir/src/main.cpp.o
  /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/copy-form.hpp
+ /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/delete-form.hpp
  /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
  /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
+ /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/list-form.hpp
  /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/main-form.hpp
+ /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/merge-form.hpp
  /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/read-form.hpp
  /home/hailiang194/Documents/LAB101/C.L.P0018/src/main.cpp

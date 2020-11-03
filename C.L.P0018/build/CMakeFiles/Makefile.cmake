@@ -121,8 +121,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/filehandling.dir/DependInfo.cmake"
+  "src/form/CMakeFiles/list-form.dir/DependInfo.cmake"
   "src/form/CMakeFiles/read-form.dir/DependInfo.cmake"
   "src/form/CMakeFiles/input.dir/DependInfo.cmake"
+  "src/form/CMakeFiles/delete-form.dir/DependInfo.cmake"
+  "src/form/CMakeFiles/merge-form.dir/DependInfo.cmake"
   "src/form/CMakeFiles/copy-form.dir/DependInfo.cmake"
   "src/form/CMakeFiles/main-form.dir/DependInfo.cmake"
   "src/form/CMakeFiles/form.dir/DependInfo.cmake"

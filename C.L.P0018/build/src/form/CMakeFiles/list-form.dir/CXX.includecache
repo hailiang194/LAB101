@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/list-form.cpp
+list-form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/list-form.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/list-form.hpp
+dirent.h
+-
+iostream
+-
+form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
+

@@ -82,6 +82,9 @@ filehandling: CMakeFiles/filehandling.dir/build.make
 filehandling: src/form/libmain-form.a
 filehandling: src/form/libread-form.a
 filehandling: src/form/libcopy-form.a
+filehandling: src/form/libmerge-form.a
+filehandling: src/form/liblist-form.a
+filehandling: src/form/libdelete-form.a
 filehandling: src/form/libform.a
 filehandling: src/form/libinput.a
 filehandling: CMakeFiles/filehandling.dir/link.txt

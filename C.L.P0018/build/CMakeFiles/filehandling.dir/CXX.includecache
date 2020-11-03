@@ -18,6 +18,18 @@ form.hpp
 input.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
 
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/delete-form.hpp
+iostream
+-
+string
+-
+cstdio
+-
+form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
+input.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
+
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
 
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
@@ -32,6 +44,14 @@ iostream
 cctype
 -
 
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/list-form.hpp
+dirent.h
+-
+iostream
+-
+form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
+
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/main-form.hpp
 iostream
 -
@@ -41,8 +61,26 @@ read-form.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/read-form.hpp
 copy-form.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/copy-form.hpp
+merge-form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/merge-form.hpp
+list-form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/list-form.hpp
+delete-form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/delete-form.hpp
 input.hpp
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/merge-form.hpp
+iostream
+-
+fstream
+-
+string
+-
+input.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/input.hpp
+form.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0018/src/form/form.hpp
 
 /home/hailiang194/Documents/LAB101/C.L.P0018/src/form/read-form.hpp
 iostream

@@ -93,4 +93,5 @@ void CopyForm::copy(const std::string& src, std::string& des) const
 
     writer.close();
     reader.close();
+    std::cout << "Copy completed" << std::endl;
 }

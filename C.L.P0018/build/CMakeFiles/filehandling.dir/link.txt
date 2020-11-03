@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/filehandling.dir/src/main.cpp.o  -o filehandling  src/form/libmain-form.a src/form/libread-form.a src/form/libcopy-form.a src/form/libform.a src/form/libinput.a 
+/usr/bin/c++    -rdynamic CMakeFiles/filehandling.dir/src/main.cpp.o  -o filehandling  src/form/libmain-form.a src/form/libread-form.a src/form/libcopy-form.a src/form/libmerge-form.a src/form/liblist-form.a src/form/libdelete-form.a src/form/libform.a src/form/libinput.a 

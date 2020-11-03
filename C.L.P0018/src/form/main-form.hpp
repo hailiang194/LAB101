@@ -5,6 +5,9 @@
 #include"form.hpp"
 #include"read-form.hpp"
 #include"copy-form.hpp"
+#include"merge-form.hpp"
+#include"list-form.hpp"
+#include"delete-form.hpp"
 #include"input.hpp"
 
 class MainForm: public Form

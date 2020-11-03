@@ -124,6 +124,19 @@ filehandling/fast:
 .PHONY : filehandling/fast
 
 #=============================================================================
+# Target rules for targets named list-form
+
+# Build rule for target.
+list-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 list-form
+.PHONY : list-form
+
+# fast build rule for target.
+list-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/list-form.dir/build.make src/form/CMakeFiles/list-form.dir/build
+.PHONY : list-form/fast
+
+#=============================================================================
 # Target rules for targets named read-form
 
 # Build rule for target.
@@ -148,6 +161,32 @@ input: cmake_check_build_system
 input/fast:
 	$(MAKE) -f src/form/CMakeFiles/input.dir/build.make src/form/CMakeFiles/input.dir/build
 .PHONY : input/fast
+
+#=============================================================================
+# Target rules for targets named delete-form
+
+# Build rule for target.
+delete-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 delete-form
+.PHONY : delete-form
+
+# fast build rule for target.
+delete-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/delete-form.dir/build.make src/form/CMakeFiles/delete-form.dir/build
+.PHONY : delete-form/fast
+
+#=============================================================================
+# Target rules for targets named merge-form
+
+# Build rule for target.
+merge-form: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 merge-form
+.PHONY : merge-form
+
+# fast build rule for target.
+merge-form/fast:
+	$(MAKE) -f src/form/CMakeFiles/merge-form.dir/build.make src/form/CMakeFiles/merge-form.dir/build
+.PHONY : merge-form/fast
 
 #=============================================================================
 # Target rules for targets named copy-form
@@ -224,8 +263,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... filehandling"
+	@echo "... list-form"
 	@echo "... read-form"
 	@echo "... input"
+	@echo "... delete-form"
+	@echo "... merge-form"
 	@echo "... copy-form"
 	@echo "... main-form"
 	@echo "... form"

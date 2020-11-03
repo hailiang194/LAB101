@@ -212,6 +212,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Dependencies for the target
 copy-form_LIB_DEPENDS:STATIC=general;form;general;input;
 
+//Dependencies for the target
+delete-form_LIB_DEPENDS:STATIC=general;form;general;input;
+
 //Value Computed by CMake
 filehandling_BINARY_DIR:STATIC=/home/hailiang194/Documents/LAB101/C.L.P0018/build
 
@@ -219,7 +222,13 @@ filehandling_BINARY_DIR:STATIC=/home/hailiang194/Documents/LAB101/C.L.P0018/buil
 filehandling_SOURCE_DIR:STATIC=/home/hailiang194/Documents/LAB101/C.L.P0018
 
 //Dependencies for the target
-main-form_LIB_DEPENDS:STATIC=general;form;general;input;general;read-form;general;copy-form;
+list-form_LIB_DEPENDS:STATIC=general;form;
+
+//Dependencies for the target
+main-form_LIB_DEPENDS:STATIC=general;form;general;input;general;read-form;general;copy-form;general;merge-form;general;list-form;general;delete-form;
+
+//Dependencies for the target
+merge-form_LIB_DEPENDS:STATIC=general;form;general;input;
 
 //Dependencies for the target
 read-form_LIB_DEPENDS:STATIC=general;form;general;input;

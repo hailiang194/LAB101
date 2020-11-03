@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblist-form.a  CMakeFiles/list-form.dir/list-form.cpp.o
+/usr/bin/ranlib liblist-form.a

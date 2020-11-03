@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/form/CMakeFiles/list-form.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f CMakeFiles/Makefile2 src/form/CMakeFiles/list-form.dir/rule
+.PHONY : src/form/CMakeFiles/list-form.dir/rule
+
+# Convenience name for target.
+list-form: src/form/CMakeFiles/list-form.dir/rule
+
+.PHONY : list-form
+
+# fast build rule for target.
+list-form/fast:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/list-form.dir/build.make src/form/CMakeFiles/list-form.dir/build
+.PHONY : list-form/fast
+
+# Convenience name for target.
 src/form/CMakeFiles/read-form.dir/rule:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f CMakeFiles/Makefile2 src/form/CMakeFiles/read-form.dir/rule
 .PHONY : src/form/CMakeFiles/read-form.dir/rule
@@ -139,6 +154,36 @@ input: src/form/CMakeFiles/input.dir/rule
 input/fast:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/input.dir/build.make src/form/CMakeFiles/input.dir/build
 .PHONY : input/fast
+
+# Convenience name for target.
+src/form/CMakeFiles/delete-form.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f CMakeFiles/Makefile2 src/form/CMakeFiles/delete-form.dir/rule
+.PHONY : src/form/CMakeFiles/delete-form.dir/rule
+
+# Convenience name for target.
+delete-form: src/form/CMakeFiles/delete-form.dir/rule
+
+.PHONY : delete-form
+
+# fast build rule for target.
+delete-form/fast:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/delete-form.dir/build.make src/form/CMakeFiles/delete-form.dir/build
+.PHONY : delete-form/fast
+
+# Convenience name for target.
+src/form/CMakeFiles/merge-form.dir/rule:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f CMakeFiles/Makefile2 src/form/CMakeFiles/merge-form.dir/rule
+.PHONY : src/form/CMakeFiles/merge-form.dir/rule
+
+# Convenience name for target.
+merge-form: src/form/CMakeFiles/merge-form.dir/rule
+
+.PHONY : merge-form
+
+# fast build rule for target.
+merge-form/fast:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/merge-form.dir/build.make src/form/CMakeFiles/merge-form.dir/build
+.PHONY : merge-form/fast
 
 # Convenience name for target.
 src/form/CMakeFiles/copy-form.dir/rule:
@@ -212,6 +257,33 @@ copy-form.cpp.s:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/copy-form.dir/build.make src/form/CMakeFiles/copy-form.dir/copy-form.cpp.s
 .PHONY : copy-form.cpp.s
 
+delete-form.o: delete-form.cpp.o
+
+.PHONY : delete-form.o
+
+# target to build an object file
+delete-form.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/delete-form.dir/build.make src/form/CMakeFiles/delete-form.dir/delete-form.cpp.o
+.PHONY : delete-form.cpp.o
+
+delete-form.i: delete-form.cpp.i
+
+.PHONY : delete-form.i
+
+# target to preprocess a source file
+delete-form.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/delete-form.dir/build.make src/form/CMakeFiles/delete-form.dir/delete-form.cpp.i
+.PHONY : delete-form.cpp.i
+
+delete-form.s: delete-form.cpp.s
+
+.PHONY : delete-form.s
+
+# target to generate assembly for a file
+delete-form.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/delete-form.dir/build.make src/form/CMakeFiles/delete-form.dir/delete-form.cpp.s
+.PHONY : delete-form.cpp.s
+
 form.o: form.cpp.o
 
 .PHONY : form.o
@@ -266,6 +338,33 @@ input.cpp.s:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/input.dir/build.make src/form/CMakeFiles/input.dir/input.cpp.s
 .PHONY : input.cpp.s
 
+list-form.o: list-form.cpp.o
+
+.PHONY : list-form.o
+
+# target to build an object file
+list-form.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/list-form.dir/build.make src/form/CMakeFiles/list-form.dir/list-form.cpp.o
+.PHONY : list-form.cpp.o
+
+list-form.i: list-form.cpp.i
+
+.PHONY : list-form.i
+
+# target to preprocess a source file
+list-form.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/list-form.dir/build.make src/form/CMakeFiles/list-form.dir/list-form.cpp.i
+.PHONY : list-form.cpp.i
+
+list-form.s: list-form.cpp.s
+
+.PHONY : list-form.s
+
+# target to generate assembly for a file
+list-form.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/list-form.dir/build.make src/form/CMakeFiles/list-form.dir/list-form.cpp.s
+.PHONY : list-form.cpp.s
+
 main-form.o: main-form.cpp.o
 
 .PHONY : main-form.o
@@ -292,6 +391,33 @@ main-form.s: main-form.cpp.s
 main-form.cpp.s:
 	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/main-form.dir/build.make src/form/CMakeFiles/main-form.dir/main-form.cpp.s
 .PHONY : main-form.cpp.s
+
+merge-form.o: merge-form.cpp.o
+
+.PHONY : merge-form.o
+
+# target to build an object file
+merge-form.cpp.o:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/merge-form.dir/build.make src/form/CMakeFiles/merge-form.dir/merge-form.cpp.o
+.PHONY : merge-form.cpp.o
+
+merge-form.i: merge-form.cpp.i
+
+.PHONY : merge-form.i
+
+# target to preprocess a source file
+merge-form.cpp.i:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/merge-form.dir/build.make src/form/CMakeFiles/merge-form.dir/merge-form.cpp.i
+.PHONY : merge-form.cpp.i
+
+merge-form.s: merge-form.cpp.s
+
+.PHONY : merge-form.s
+
+# target to generate assembly for a file
+merge-form.cpp.s:
+	cd /home/hailiang194/Documents/LAB101/C.L.P0018/build && $(MAKE) -f src/form/CMakeFiles/merge-form.dir/build.make src/form/CMakeFiles/merge-form.dir/merge-form.cpp.s
+.PHONY : merge-form.cpp.s
 
 read-form.o: read-form.cpp.o
 
@@ -327,24 +453,36 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... list-form"
 	@echo "... read-form"
 	@echo "... rebuild_cache"
 	@echo "... input"
+	@echo "... delete-form"
+	@echo "... merge-form"
 	@echo "... copy-form"
 	@echo "... main-form"
 	@echo "... form"
 	@echo "... copy-form.o"
 	@echo "... copy-form.i"
 	@echo "... copy-form.s"
+	@echo "... delete-form.o"
+	@echo "... delete-form.i"
+	@echo "... delete-form.s"
 	@echo "... form.o"
 	@echo "... form.i"
 	@echo "... form.s"
 	@echo "... input.o"
 	@echo "... input.i"
 	@echo "... input.s"
+	@echo "... list-form.o"
+	@echo "... list-form.i"
+	@echo "... list-form.s"
 	@echo "... main-form.o"
 	@echo "... main-form.i"
 	@echo "... main-form.s"
+	@echo "... merge-form.o"
+	@echo "... merge-form.i"
+	@echo "... merge-form.s"
 	@echo "... read-form.o"
 	@echo "... read-form.i"
 	@echo "... read-form.s"
