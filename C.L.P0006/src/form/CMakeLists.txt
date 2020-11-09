@@ -1,0 +1,10 @@
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+link_directories(${PROJECT_BINARY_DIR}/src/object)
+link_directories(${PROJECT_BINARY_DIR}/src/file-process)
+add_library(form form.cpp form.hpp)
+add_library(input input.cpp input.hpp)
+add_library(main-form main-form.cpp main-form.hpp)
+target_link_libraries(main-form form word-getter hang-man random-word-getter user input)

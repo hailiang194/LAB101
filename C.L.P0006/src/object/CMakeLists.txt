@@ -1,0 +1,10 @@
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+link_libraries(${PROJECT_BINARY_DIR}/src/file-process)
+add_library(random-word-getter random-word-getter.cpp random-word-getter.hpp)
+add_library(user user.cpp user.hpp)
+add_library(hang-man hang-man.cpp hang-man.hpp)
+#target_link_libraries(random-word-getter word-getter)
+#target_link_libraries(hang-man user)

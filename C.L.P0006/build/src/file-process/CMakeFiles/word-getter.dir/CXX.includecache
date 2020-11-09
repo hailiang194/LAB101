@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/file-process/word-getter.cpp
+word-getter.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/file-process/word-getter.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/file-process/word-getter.hpp
+fstream
+-
+vector
+-
+memory
+-
+exception
+-
+

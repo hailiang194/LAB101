@@ -1,0 +1,2 @@
+/usr/bin/ar qc librandom-word-getter.a  CMakeFiles/random-word-getter.dir/random-word-getter.cpp.o
+/usr/bin/ranlib librandom-word-getter.a
