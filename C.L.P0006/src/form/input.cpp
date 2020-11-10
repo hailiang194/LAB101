@@ -23,6 +23,9 @@ int Input::input(const std::string& prompt, const int MIN, const int MAX)
 
     for(std::size_t i = 0; i < line.length(); ++i)
     {
+        if(i == 0 && line[i] == '-')
+            continue;
+
         if(!isdigit(line[i]))
             throw std::overflow_error("Invalid input");
     }
