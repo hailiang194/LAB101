@@ -1,0 +1,3 @@
+/home/hailiang194/Documents/LAB101/C.S.P0106/build/CMakeFiles/rebuild_cache.dir
+/home/hailiang194/Documents/LAB101/C.S.P0106/build/CMakeFiles/edit_cache.dir
+/home/hailiang194/Documents/LAB101/C.S.P0106/build/CMakeFiles/longest-string.dir
