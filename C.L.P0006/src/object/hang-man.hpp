@@ -15,7 +15,7 @@ class HangMan
 public:
     HangMan(const std::string& word, User& user);
     HangMan(const HangMan& hangman);
-    HangMan operator=(const HangMan& hangman);
+    HangMan& operator=(const HangMan& hangman);
     ~HangMan();
 
     const std::string& hiddenWord() const;

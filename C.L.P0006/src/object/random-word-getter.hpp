@@ -10,7 +10,7 @@ class RandomWordGetter
 public:
     RandomWordGetter(const WordGetter& getter);
     RandomWordGetter(const RandomWordGetter& getter);
-    RandomWordGetter operator=(const RandomWordGetter& getter);
+    RandomWordGetter& operator=(const RandomWordGetter& getter);
     ~RandomWordGetter();
 
     const std::string& get() const;

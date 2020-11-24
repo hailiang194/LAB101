@@ -12,7 +12,7 @@ RandomWordGetter::RandomWordGetter(const RandomWordGetter& getter)
 
 }
 
-RandomWordGetter RandomWordGetter::operator=(const RandomWordGetter& getter)
+RandomWordGetter& RandomWordGetter::operator=(const RandomWordGetter& getter)
 {
     (*this) = RandomWordGetter(getter);
     return(*this);

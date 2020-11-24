@@ -15,7 +15,7 @@ HangMan::HangMan(const HangMan& hangman)
 
 }
 
-HangMan HangMan::operator=(const HangMan& hangman)
+HangMan& HangMan::operator=(const HangMan& hangman)
 {
     m_word = hangman.m_word;
     m_user = hangman.m_user;
