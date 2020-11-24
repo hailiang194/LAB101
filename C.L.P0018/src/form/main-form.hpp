@@ -25,7 +25,7 @@ public:
     };
     MainForm();
     MainForm(const MainForm& form);
-    MainForm operator=(const MainForm& form);
+    MainForm& operator=(const MainForm& form);
     ~MainForm();
 protected:
     void setup() const;

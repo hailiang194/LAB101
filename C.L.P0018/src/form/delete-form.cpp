@@ -12,7 +12,7 @@ DeleteForm::DeleteForm(const DeleteForm& form)
 
 }
 
-DeleteForm DeleteForm::operator=(const DeleteForm& form)
+DeleteForm& DeleteForm::operator=(const DeleteForm& form)
 {
     Form::operator=(form);
     return(*this);

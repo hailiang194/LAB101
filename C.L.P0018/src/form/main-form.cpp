@@ -12,7 +12,7 @@ MainForm::MainForm(const MainForm& form)
 
 }
 
-MainForm MainForm::operator=(const MainForm& form)
+MainForm& MainForm::operator=(const MainForm& form)
 {
     Form::operator=(form);
     return(*this);

@@ -12,7 +12,7 @@ class DeleteForm: public Form
 public:
     DeleteForm();
     DeleteForm(const DeleteForm& form);
-    DeleteForm operator=(const DeleteForm& form);
+    DeleteForm& operator=(const DeleteForm& form);
     ~DeleteForm();
 protected:
     void setup() const;
