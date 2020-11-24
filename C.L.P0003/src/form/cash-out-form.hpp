@@ -14,7 +14,7 @@ class CashOutForm: public Form
 public:
     CashOutForm(std::shared_ptr<User> user);
     CashOutForm(const CashOutForm& form);
-    CashOutForm operator=(const CashOutForm& form);
+    CashOutForm& operator=(const CashOutForm& form);
     ~CashOutForm();
 protected:
     void setup() const;

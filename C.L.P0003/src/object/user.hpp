@@ -16,7 +16,7 @@ public:
     typedef double coin_t;
     User(coin_t coin=DEFAULT_COIN);
     User(const User& user);
-    User operator=(const User& user);
+    User& operator=(const User& user);
     virtual ~User();
 
     const coin_t& coin() const;

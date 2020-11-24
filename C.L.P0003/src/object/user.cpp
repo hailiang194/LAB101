@@ -23,7 +23,7 @@ User::User(const User& user)
 
 }
 
-User User::operator=(const User& user)
+User& User::operator=(const User& user)
 {
     m_coin = user.m_coin;
     return(*this);

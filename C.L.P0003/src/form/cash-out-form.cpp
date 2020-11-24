@@ -12,7 +12,7 @@ CashOutForm::CashOutForm(const CashOutForm& form)
 
 }
 
-CashOutForm CashOutForm::operator=(const CashOutForm& form)
+CashOutForm& CashOutForm::operator=(const CashOutForm& form)
 {
     Form::operator=(form);
     m_user = form.m_user;
