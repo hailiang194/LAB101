@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/default.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/loader.hpp
+string
+-
+fstream
+-
+default.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/default.hpp
+../object/user.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.cpp
+user.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/object/user.hpp
+cmath
+-
+limits
+-
+../game-saver/loader.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0003/src/game-saver/loader.hpp
+

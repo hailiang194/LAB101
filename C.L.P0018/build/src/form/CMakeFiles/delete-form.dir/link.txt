@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdelete-form.a  CMakeFiles/delete-form.dir/delete-form.cpp.o
+/usr/bin/ranlib libdelete-form.a

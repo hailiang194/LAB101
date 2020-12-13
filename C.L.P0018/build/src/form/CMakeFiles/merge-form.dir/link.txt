@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmerge-form.a  CMakeFiles/merge-form.dir/merge-form.cpp.o
+/usr/bin/ranlib libmerge-form.a

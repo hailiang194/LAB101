@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcopy-form.a  CMakeFiles/copy-form.dir/copy-form.cpp.o
+/usr/bin/ranlib libcopy-form.a

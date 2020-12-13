@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgame-saver.a  CMakeFiles/game-saver.dir/saver.cpp.o
+/usr/bin/ranlib libgame-saver.a

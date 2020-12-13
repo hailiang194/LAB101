@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/hang-man.cpp
+./hang-man.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/hang-man.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/hang-man.hpp
+string
+-
+array
+-
+cctype
+-
+user.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/user.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/user.hpp
+cstddef
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libslot-machine.a  CMakeFiles/slot-machine.dir/slot-machine.cpp.o
+/usr/bin/ranlib libslot-machine.a

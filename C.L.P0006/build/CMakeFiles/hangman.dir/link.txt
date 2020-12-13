@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/hangman.dir/src/main.cpp.o  -o hangman  src/form/libmain-form.a src/form/libform.a src/file-process/libword-getter.a src/object/libhang-man.a src/object/librandom-word-getter.a src/object/libuser.a src/form/libinput.a 

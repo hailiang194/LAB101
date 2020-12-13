@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprize-getter.a  CMakeFiles/prize-getter.dir/prize-getter.cpp.o
+/usr/bin/ranlib libprize-getter.a

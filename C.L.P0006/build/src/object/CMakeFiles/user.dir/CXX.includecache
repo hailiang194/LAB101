@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/user.cpp
+user.hpp
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/user.hpp
+
+/home/hailiang194/Documents/LAB101/C.L.P0006/src/object/user.hpp
+cstddef
+-
+

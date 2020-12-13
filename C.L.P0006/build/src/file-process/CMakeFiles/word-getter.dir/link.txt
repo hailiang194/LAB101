@@ -1,0 +1,2 @@
+/usr/bin/ar qc libword-getter.a  CMakeFiles/word-getter.dir/word-getter.cpp.o
+/usr/bin/ranlib libword-getter.a

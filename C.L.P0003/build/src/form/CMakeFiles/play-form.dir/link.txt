@@ -1,0 +1,2 @@
+/usr/bin/ar qc libplay-form.a  CMakeFiles/play-form.dir/play-form.cpp.o
+/usr/bin/ranlib libplay-form.a

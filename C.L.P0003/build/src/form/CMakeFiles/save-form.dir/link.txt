@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsave-form.a  CMakeFiles/save-form.dir/save-form.cpp.o
+/usr/bin/ranlib libsave-form.a

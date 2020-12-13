@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhang-man.a  CMakeFiles/hang-man.dir/hang-man.cpp.o
+/usr/bin/ranlib libhang-man.a
